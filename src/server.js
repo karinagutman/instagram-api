@@ -25,7 +25,7 @@ function listen() {
 }
 
 function connect() {
-    mongoose.connect(config.dbUUrl, {
+    mongoose.connect(config.dbUrl, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     });

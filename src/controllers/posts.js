@@ -23,7 +23,7 @@ class Posts {
         })
         try {
             const createdPost = await post.save();
-            res.json(createdPost);
+            res.status(201).json(createdPost);
         } catch (err) {
             res.status(400).json(err);
         }
